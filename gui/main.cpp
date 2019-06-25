@@ -1,10 +1,5 @@
 #include <windows.h>
-
-#define FILE_MENU_NEW 1
-#define FILE_MENU_OPEN 2
-#define FILE_MENU_SAVE 3
-#define FILE_MENU_EXIT 4
-#define HELP_MENU 5
+#include "macro.h"
 
 LRESULT CALLBACK WindowProcedure(HWND, UINT, WPARAM, LPARAM);
 
@@ -14,7 +9,7 @@ HMENU hMenu;
 
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hprevInst, LPSTR args, int ncmdshow)
 {
-	WNDCLASSW wc = { 0 };
+	WNDCLASSW wc = {  };
 
 	wc.hbrBackground = (HBRUSH)COLOR_WINDOW;
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
