@@ -43,7 +43,6 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp)
 			DestroyWindow(hWnd);
 			break;
 		case FILE_MENU_NEW:
-			MessageBeep(MB_OK);
 			break;
 		case HELP_MENU:
 			MessageBox(hWnd,"     to contact me email \n chatbox8558@gmail.com", "help", MB_OK);
